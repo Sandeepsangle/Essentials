@@ -12,6 +12,7 @@ import Admin from "./Component/Admin";
 const App3 = () => {
   return (
     <>
+    <BrowserRouter basename="/Essentials">
       <Router>
         <Routes>
           <Route exact path="/login" element={<Login/>} />
@@ -25,6 +26,7 @@ const App3 = () => {
          <Route exact path='/admin' element={<Admin/>}/>
         </Routes>
       </Router>
+      </BrowserRouter>
   </>
   )
 }
