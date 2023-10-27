@@ -2,7 +2,7 @@
   "name": "shopping-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "",
+  "homepage": "https://sandeepsangle.github.io/Essentials/",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
