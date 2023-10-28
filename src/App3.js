@@ -16,7 +16,7 @@ const App3 = () => {
         <Routes >
           <Route  exact path="/Essentials/login" element={<Login/>} />
           <Route exact path="/Essentials/register" element={<Registration />} />
-          <Route exact path ="/Essentials" element ={<HomePage/>}/>
+          <Route exact path ="/" element ={<HomePage/>}/>
           <Route element={<ProtectedRoutes/>}>
             <Route exact path = "/Essentials/cart" element={<ViewCart/>}/>
             <Route exact path ="/Essentials/dashboard" element ={<Dashboard/>}/>
