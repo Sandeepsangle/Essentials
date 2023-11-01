@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Login from "./Login";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { useEffect } from "react";
 import Navbar from "../Navbar";
 const Registration = () => {
@@ -93,14 +93,14 @@ const Registration = () => {
                       className="inline-block px-7 py-3 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out w-full"
                       data-mdb-ripple="true"
                       data-mdb-ripple-color="light"
+                      
                     >
                       Register
                     </button>
                     <div className="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5">
                       <p className="text-center font-semibold mx-4 mb-0">OR</p>
                     </div>
-                    <a
-                    href='/login'> Already Registered {name}, login in?</a>
+                    <Link to ='/login'> Already Registered {name}, login in?</Link>
                   </form>
                 </div>
               </div>
