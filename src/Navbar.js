@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CartProvider } from "react-use-cart";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   let [name, setName] = useState();
   let [show, setShow] = useState(false);
@@ -14,8 +15,7 @@ const Navbar = () => {
         role="tablist"
       >
         <li className="nav-item" role="presentation">
-          <a
-            href="/"
+          <Link to ="/"
             className="nav-link block font-medium text-xl leading-tight uppercase rounded px-6 py-3 my-2 md:mr-2 focus:outline-none focus:ring-0 active"
             data-bs-toggle="pill"
             data-bs-target="#pills-home"
@@ -24,11 +24,10 @@ const Navbar = () => {
             aria-selected="true"
           >
             Home
-          </a>
+          </Link>
         </li>
         <li className="nav-item" role="presentation">
-          <a
-            href="/register"
+          <Link to ="/register"
             className=" nav-link block font-medium text-xl leading-tight uppercase rounded px-6 py-3 my-2 md:mx-2 focus:outline-none focus:ring-0"
             data-bs-toggle="pill"
             data-bs-target="#pills-profile"
@@ -37,11 +36,10 @@ const Navbar = () => {
             aria-selected="false"
           >
             Registration
-          </a>
+          </Link>
         </li>
         <li className="nav-item" role="presentation">
-          <a
-            href="/login"
+          <Link to ="/login"
             className=" nav-link block font-medium text-xl leading-tight uppercase rounded px-6 py-3 my-2 md:mx-2 focus:outline-none focus:ring-0"
             data-bs-toggle="pill"
             data-bs-target="#pills-contact"
@@ -50,12 +48,11 @@ const Navbar = () => {
             aria-selected="false"
           >
             Login
-          </a>
+          </Link>
         </li>
         {name && (
           <li className="nav-item" role="presentation">
-            <a
-              href="/dashboard"
+            <Link to="/dashboard"
               className=" nav-link block font-medium text-xl leading-tight uppercase rounded px-6 py-3 my-2 md:mx-2 focus:outline-none focus:ring-0"
               data-bs-toggle="pill"
               data-bs-target="#pills-contact"
@@ -64,13 +61,12 @@ const Navbar = () => {
               aria-selected="false"
             >
               Dashboard
-            </a>
+            </Link>
           </li>
         )}
         {name && (
           <li className="nav-item" role="presentation">
-            <a
-              href="/cart"
+            <Link to ="/cart"
               className=" nav-link block font-medium text-xl leading-tight uppercase rounded px-6 py-3 my-2 md:mx-2 focus:outline-none focus:ring-0"
               data-bs-toggle="pill"
               data-bs-target="#pills-contact"
@@ -79,12 +75,11 @@ const Navbar = () => {
               aria-selected="false"
             >
               View Cart
-            </a>
+            </Link>
           </li>
         )}
         <li className="nav-item" role="presentation">
-          <a
-            href="/"
+          <Link to ="/"
             className=" nav-link block font-medium text-xl leading-tight uppercase rounded px-6 py-3 my-2 md:mx-2 focus:outline-none focus:ring-0"
             data-bs-toggle="pill"
             data-bs-target="#pills-contact"
@@ -99,7 +94,7 @@ const Navbar = () => {
             }}
           >
             Logout
-          </a>
+          </Link>
         </li>
         {name && (
           <span className=" nav-link block font-small text-xl leading-tight px-6 py-3 my-2 md:mx-2 focus:outline-none focus:ring-0">

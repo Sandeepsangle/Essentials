@@ -12,17 +12,17 @@ import Admin from "./Component/Admin";
 const App3 = () => {
   return (
     <>
-      <Router basename="/Essentials" >
-        <Routes >
-          <Route  exact path="/Essentials/login" element={<Login/>} />
-          <Route exact path="/Essentials/register" element={<Registration />} />
+      <Router  basename="/Essentials">
+        <Routes>
+          <Route  exact path="/login" element={<Login/>} />
+          <Route exact path="/register" element={<Registration />} />
           <Route exact path ="/" element ={<HomePage/>}/>
           <Route element={<ProtectedRoutes/>}>
-            <Route exact path = "/Essentials/cart" element={<ViewCart/>}/>
-            <Route exact path ="/Essentials/dashboard" element ={<Dashboard/>}/>
-            <Route exact path="/Essentials/payu" element={<PayU/>}/>
+            <Route exact path = "/cart" element={<ViewCart/>}/>
+            <Route exact path ="/dashboard" element ={<Dashboard/>}/>
+            <Route exact path="/payu" element={<PayU/>}/>
          </Route> 
-         <Route exact path='/Essentials/admin' element={<Admin/>}/>
+         <Route exact path='/admin' element={<Admin/>}/>
         </Routes>
       </Router>
 
